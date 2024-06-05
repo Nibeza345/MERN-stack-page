@@ -1,38 +1,77 @@
-.App {
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  margin-top: 10px;
+}
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 25rem;
+  padding: 5px;
+  font-size: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+button[type="submit"] {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: dodgerblue;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-left: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button[type="submit"]:hover {
+  background-color: darkblue;
+}
+
+#result {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+#pagination-container {
+  margin-top: 10px;
+}
+
+.page-link {
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
 }
